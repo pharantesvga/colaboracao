@@ -30,13 +30,22 @@ A melhor forma de resolver um conflito é no seu próprio computador (no VS Code
 ### Passo 1: Atualize a sua branch `main` local
 Como o código do seu colega acabou de entrar na `main` do GitHub, você precisa baixá-lo:
 ```bash
-git checkout main
+# Opção moderna:
+git switch main
 git pull origin main
+
+# Opção clássica:
+# git checkout main
+# git pull origin main
 ```
 
 ### Passo 2: Volte para a sua branch de trabalho
 ```bash
-git checkout feature/pedro-sua-pagina
+# Opção moderna:
+git switch feature/pedro-sua-pagina
+
+# Opção clássica:
+# git checkout feature/pedro-sua-pagina
 ```
 
 ### Passo 3: Mescle a `main` atualizada para dentro da sua branch
@@ -119,6 +128,6 @@ Assim que o comando `git push` for executado:
 ## 💡 Dicas de Ouro para o Dia a Dia
 
 - **Não se assuste:** Conflitos são normais em qualquer equipe de desenvolvimento e acontecem todos os dias.
-- **Mantenha sua branch fresca:** Se você estiver trabalhando em uma tarefa que demora horas ou dias, rode `git checkout main && git pull` e depois `git merge main` na sua branch com frequência para não acumular muitas divergências.
+- **Mantenha sua branch fresca:** Se você estiver trabalhando em uma tarefa que demora horas ou dias, rode `git switch main && git pull` (ou `git checkout main && git pull`) e depois `git merge main` na sua branch com frequência para não acumular muitas divergências.
 - **Comunicação:** Avise o colega quando for alterar arquivos centrais e compartilhados (como `index.html` ou `style.css`).
 

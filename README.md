@@ -46,14 +46,16 @@ A branch `main` está protegida pelas configurações do GitHub:
 
 ### 1. Preparação (Sempre antes de começar)
 ```bash
-git checkout main
+# Opção moderna (ou: git checkout main)
+git switch main
 git pull origin main
 ```
 
 ### 2. Desenvolvimento (O Desenvolvedor)
 ```bash
-# Crie sua branch
-git checkout -b feature/seu-nome-sua-pagina
+# Crie sua branch (Opção moderna com switch -c ou clássica com checkout -b)
+git switch -c feature/seu-nome-sua-pagina
+# (ou: git checkout -b feature/seu-nome-sua-pagina)
 
 # Trabalhe no código, depois adicione e comite
 git add .
@@ -69,11 +71,15 @@ git push origin feature/seu-nome-sua-pagina
 2. Vá na aba **Files changed**.
 3. Deixe comentários em linhas específicas, se necessário.
 4. Clique em **Review changes** e selecione **Approve**.
-5. Clique no botão verde **Merge pull request** e apague a branch logo em seguida.
+5. Clique no botão verde **Merge pull request** e clique no botão **Delete branch** no GitHub.
 
-### 4. Sincronização Final (Ambos)
-*Sempre que um PR for aprovado e mergeado, todos devem rodar:*
+### 4. Sincronização e Limpeza Final (Ambos)
+*Sempre que um PR for aprovado e mergeado, limpe a branch e volte para a `main`:*
 ```bash
-git checkout main
+# Volte para a main e atualize (ou: git checkout main)
+git switch main
 git pull origin main
+
+# Delete a branch local que já foi mergeada
+git branch -d feature/seu-nome-sua-pagina
 ```

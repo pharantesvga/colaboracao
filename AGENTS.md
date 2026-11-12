@@ -39,12 +39,12 @@ Qualquer agente deve obedecer e reforçar as seguintes regras ao interagir com o
 
 3. **Fluxo de Trabalho a ser Orientado:**
    ```bash
-   # 1. Atualizar a main
-   git checkout main
+   # 1. Atualizar a main (ou: git checkout main)
+   git switch main
    git pull origin main
 
-   # 2. Criar a branch de trabalho
-   git checkout -b feature/<autor>-<tarefa>
+   # 2. Criar a branch de trabalho (ou: git checkout -b feature/<autor>-<tarefa>)
+   git switch -c feature/<autor>-<tarefa>
 
    # 3. Comitar com mensagens claras em português
    git add .
@@ -52,6 +52,9 @@ Qualquer agente deve obedecer e reforçar as seguintes regras ao interagir com o
 
    # 4. Enviar a branch e abrir PR
    git push origin feature/<autor>-<tarefa>
+
+   # 5. Após o merge do PR: deletar a branch no GitHub e limpar localmente:
+   # git switch main && git pull origin main && git branch -d feature/<autor>-<tarefa>
    ```
 
 4. **Revisão Cruzada:**
