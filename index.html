@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hub Colaborativo | Pedro & Gustavo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav-container">
+      <div class="logo">
+        <span class="logo-icon">🚀</span>
+        <strong>GitColab</strong>
+      </div>
+      <nav class="nav">
+        <a href="index.html" class="nav-link active">Início</a>
+        <a href="#pedro" class="nav-link">Pedro</a>
+        <a href="#gustavo" class="nav-link">Gustavo</a>
+        <a href="https://github.com/pharantesvga/colaboracao" target="_blank" rel="noopener noreferrer" class="nav-link github-link">GitHub ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <span class="pill-badge">Projeto Prático de Estudo</span>
+        <h1>Git & GitHub em Colaboração</h1>
+        <p class="hero-description">
+          Hub central do projeto desenvolvido colaborativamente por <strong>Pedro</strong> e <strong>Gustavo</strong> através de branches, Pull Requests e revisão cruzada de código.
+        </p>
+        <div class="hero-actions">
+          <a href="#pedro" class="btn btn-pedro">Páginas do Pedro</a>
+          <a href="#gustavo" class="btn btn-gustavo">Páginas do Gustavo</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container showcase-section">
+      <div class="collaborator-grid">
+        
+        <!-- Bloco do Pedro -->
+        <article class="collaborator-card card-pedro" id="pedro">
+          <div class="collaborator-header">
+            <div class="avatar-badge">🏍️</div>
+            <div>
+              <h2>Pedro Henrique</h2>
+              <span class="role-subtitle">Motos, 3D, Games & Café</span>
+            </div>
+          </div>
+          <p class="collaborator-bio">
+            Páginas e tópicos de interesse criados na branch <code>feature/pedro-*</code>.
+          </p>
+          <ul class="page-list">
+            <li>
+              <a href="pedro-sobre.html" class="page-link">
+                <span class="page-title">👤 Sobre Mim</span>
+                <span class="badge">Biografia</span>
+              </a>
+            </li>
+            <li>
+              <a href="pedro-motos.html" class="page-link">
+                <span class="page-title">🏍️ Restauração de Motos</span>
+                <span class="badge">Honda CB 400</span>
+              </a>
+            </li>
+            <li>
+              <a href="pedro-impressao3d.html" class="page-link">
+                <span class="page-title">🖨️ Impressão 3D</span>
+                <span class="badge">Bambu Lab & Peças</span>
+              </a>
+            </li>
+            <li>
+              <a href="pedro-games.html" class="page-link">
+                <span class="page-title">🎮 Games</span>
+                <span class="badge">Mortal Kombat & PS5</span>
+              </a>
+            </li>
+            <li>
+              <a href="pedro-cafe.html" class="page-link">
+                <span class="page-title">☕ Calil Cafés Especiais</span>
+                <span class="badge">Produção & Grãos</span>
+              </a>
+            </li>
+          </ul>
+        </article>
+
+        <!-- Bloco do Gustavo -->
+        <article class="collaborator-card card-gustavo" id="gustavo">
+          <div class="collaborator-header">
+            <div class="avatar-badge">💻</div>
+            <div>
+              <h2>Gustavo</h2>
+              <span class="role-subtitle">Tech, Scripts & Projetos</span>
+            </div>
+          </div>
+          <p class="collaborator-bio">
+            Páginas e tópicos de interesse criados na branch <code>feature/gustavo-*</code>.
+          </p>
+          <ul class="page-list">
+            <li>
+              <a href="gustavo-sobre.html" class="page-link">
+                <span class="page-title">👤 Sobre Mim</span>
+                <span class="badge">Biografia & Contatos</span>
+              </a>
+            </li>
+            <li>
+              <a href="gustavo-setup.html" class="page-link">
+                <span class="page-title">⚙️ Setup & Ferramentas</span>
+                <span class="badge">Ambiente & SO</span>
+              </a>
+            </li>
+            <li>
+              <a href="gustavo-projetos.html" class="page-link">
+                <span class="page-title">📂 Projetos & Scripts</span>
+                <span class="badge">Automações & Dev</span>
+              </a>
+            </li>
+            <li>
+              <a href="gustavo-hobbies.html" class="page-link">
+                <span class="page-title">🎯 Hobbies</span>
+                <span class="badge">Interesses Pessoais</span>
+              </a>
+            </li>
+            <li>
+              <a href="gustavo-links.html" class="page-link">
+                <span class="page-title">🔗 Links & Redes</span>
+                <span class="badge">Agregador</span>
+              </a>
+            </li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Regras e Fluxo Rápido -->
+    <section class="container rules-section">
+      <div class="rules-card">
+        <h3>🛡️ Lembrete do Fluxo Colaborativo</h3>
+        <div class="rules-grid">
+          <div class="rule-item">
+            <strong>1. Ninguém comita na main</strong>
+            <p>Crie sua branch: <code>git checkout -b feature/sua-tarefa</code>.</p>
+          </div>
+          <div class="rule-item">
+            <strong>2. Abra um Pull Request</strong>
+            <p>Envie com <code>git push</code> e abra o PR no GitHub.</p>
+          </div>
+          <div class="rule-item">
+            <strong>3. Revisão Cruzada Obrigatória</strong>
+            <p>Pedro aprova o PR do Gustavo e vice-versa antes do merge.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© <span id="current-year"></span> — Projeto de Estudo Git & GitHub Colaborativo.</p>
+      <p class="footer-subtext">Feito por Pedro & Gustavo.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
