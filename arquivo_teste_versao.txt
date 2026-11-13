@@ -1,5 +1,2 @@
 v1 - Arquivo criado para verificar a funcionalidade do pull request.
 v1 - Depois será revertido e a linha abaixo não deverá estar presente.
-
-v2 - adicionando ERRO
-
